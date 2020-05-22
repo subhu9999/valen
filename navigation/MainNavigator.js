@@ -22,6 +22,7 @@ import { HeaderButtons, Item } from "react-navigation-header-buttons";
 import HeaderRight from "../components/HeaderRight";
 import Profile from "../screens/Profile";
 import Cart from "../screens/Cart";
+import ListingDetailed from "../screens/ListingDetailed";
 
 const defaultNavOptions = {
   headerStyle: {
@@ -38,6 +39,7 @@ const PlainNavigator = createStackNavigator(
         headerShown: false,
       },
     },
+    ListingDetailed: ListingDetailed,
     Profile: {
       screen: Profile,
     },
